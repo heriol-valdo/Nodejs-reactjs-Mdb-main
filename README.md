@@ -51,13 +51,13 @@ ProductManager/
 
 ### 1. Cloner le projet
 ```bash
-git clone <url-du-repo>
-cd ProductManager
+git clone  https://github.com/heriol-valdo/Nodejs-reactjs-Mdb-main.git
+cd Nodejs-reactjs-Mdb-main
 ```
 
 ### 2. Lancer le backend
 ```bash
-cd nodejs
+cd Nodejs
 npm install
 npm start
 # API disponible sur http://localhost:5000
