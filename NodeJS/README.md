@@ -32,24 +32,27 @@ nodejs/
 
 ---
 
-## ✨ Fonctionnalités
+## ✨ Fonctionnalités API
 
 ### 🔐 Authentification (`/api/users`)
-| Méthode | Route | Description |
-|---|---|---|
-| `POST` | `/api/users/register` | Inscription d'un nouvel utilisateur |
-| `POST` | `/api/users/login` | Connexion et récupération du token JWT |
-| `GET` | `/api/users/:id` | Récupérer les infos d'un utilisateur |
-| `POST` | `/api/users/logout` | Déconnexion |
 
-### 📦 Produits (`/api/produits`)
-| Méthode | Route | Description |
-|---|---|---|
-| `GET` | `/api/produits` | Lister tous les produits |
-| `GET` | `/api/produits/:id` | Récupérer un produit par ID |
-| `POST` | `/api/produits` | Créer un nouveau produit |
-| `PUT` | `/api/produits/:id` | Modifier un produit existant |
-| `DELETE` | `/api/produits/:id` | Supprimer un produit |
+| Méthode | Route              | Description                                    |
+| ------- | ------------------ | ---------------------------------------------- |
+| `POST`  | `/api/users/`      | Inscription d'un nouvel utilisateur            |
+| `POST`  | `/api/users/login` | Connexion et récupération du token JWT         |
+| `GET`   | `/api/users/:id`   | Récupérer les infos d'un utilisateur (protégé) |
+
+---
+
+### 📦 Produits (`/api/produits`) – toutes routes protégées
+
+| Méthode  | Route               | Description                  |
+| -------- | ------------------- | ---------------------------- |
+| `GET`    | `/api/produits`     | Lister tous les produits     |
+| `GET`    | `/api/produits/:id` | Récupérer un produit par ID  |
+| `POST`   | `/api/produits`     | Créer un nouveau produit     |
+| `PUT`    | `/api/produits/:id` | Modifier un produit existant |
+| `DELETE` | `/api/produits/:id` | Supprimer un produit         |
 
 ---
 

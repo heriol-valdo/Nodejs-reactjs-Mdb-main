@@ -90,15 +90,15 @@ L'application sera disponible sur : **http://localhost:3000**
 
 ## 🗺️ Routes de l'application
 
-| Route | Composant | Description |
-|---|---|---|
-| `/register` | `UserForm` | Page d'inscription |
-| `/login` | `LoginForm` | Page de connexion |
-| `/` | `ProduitList` | Liste des produits (protégée) |
-| `/add/1` | `ProduitForm` | Ajouter un produit (protégée) |
-| `/produit/:id/2` | `ProduitForm` | Modifier un produit (protégée) |
 
----
+| Route              | Composant     | Description         |
+| ------------------ | ------------- | ------------------- |
+| `/addUser`         | `UserForm`    | Page d'inscription  |
+| `/login`           | `UserLogin`   | Page de connexion   |
+| `/`                | `ProduitList` | Liste des produits  |
+| `/add/:ed`         | `ProduitForm` | Ajouter un produit  |
+| `/produit/:id/:ed` | `ProduitForm` | Modifier un produit |
+
 
 ## 🎨 Design
 
